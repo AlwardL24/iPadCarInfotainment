@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1E052072A7393CD00DB6304 /* MusadoraKit in Frameworks */ = {isa = PBXBuildFile; productRef = D1E052062A7393CD00DB6304 /* MusadoraKit */; };
+		D1E052092A7393CD00DB6304 /* MusadoraLabsKit in Frameworks */ = {isa = PBXBuildFile; productRef = D1E052082A7393CD00DB6304 /* MusadoraLabsKit */; };
+		D1E052112A73964500DB6304 /* MusicAuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E052102A73964500DB6304 /* MusicAuthorizationManager.swift */; };
 		DFB9732D2A733F3B00623812 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB9732C2A733F3B00623812 /* MusicViewController.swift */; };
+		DFB973312A734D5600623812 /* UpNextUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB973302A734D5600623812 /* UpNextUITableView.swift */; };
+		DFB973362A7351AF00623812 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DFB973352A7351AF00623812 /* SwiftyJSON */; };
 		FC66917A2A733DDD0049EF08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6691792A733DDD0049EF08 /* AppDelegate.swift */; };
 		FC66917C2A733DDD0049EF08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66917B2A733DDD0049EF08 /* SceneDelegate.swift */; };
 		FC66917E2A733DDD0049EF08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66917D2A733DDD0049EF08 /* ViewController.swift */; };
@@ -19,7 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D1E052102A73964500DB6304 /* MusicAuthorizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAuthorizationManager.swift; sourceTree = "<group>"; };
 		DFB9732C2A733F3B00623812 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		DFB973302A734D5600623812 /* UpNextUITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpNextUITableView.swift; sourceTree = "<group>"; };
 		FC6691762A733DDD0049EF08 /* iPadCarInfotainment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPadCarInfotainment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6691792A733DDD0049EF08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC66917B2A733DDD0049EF08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +45,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC66918F2A735C220049EF08 /* MapboxNavigation in Frameworks */,
+				DFB973362A7351AF00623812 /* SwiftyJSON in Frameworks */,
+				D1E052072A7393CD00DB6304 /* MusadoraKit in Frameworks */,
+				D1E052092A7393CD00DB6304 /* MusadoraLabsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +76,9 @@
 				FC9153882A73941500D9ADBE /* iPadCarInfotainment.entitlements */,
 				FC6691792A733DDD0049EF08 /* AppDelegate.swift */,
 				FC66917B2A733DDD0049EF08 /* SceneDelegate.swift */,
+				D1E052102A73964500DB6304 /* MusicAuthorizationManager.swift */,
 				DFB9732C2A733F3B00623812 /* MusicViewController.swift */,
+				DFB973302A734D5600623812 /* UpNextUITableView.swift */,
 				FC66917D2A733DDD0049EF08 /* ViewController.swift */,
 				FC66917F2A733DDD0049EF08 /* Main.storyboard */,
 				FC6691822A733DDF0049EF08 /* Assets.xcassets */,
@@ -95,6 +107,9 @@
 			name = iPadCarInfotainment;
 			packageProductDependencies = (
 				FC66918E2A735C220049EF08 /* MapboxNavigation */,
+				DFB973352A7351AF00623812 /* SwiftyJSON */,
+				D1E052062A7393CD00DB6304 /* MusadoraKit */,
+				D1E052082A7393CD00DB6304 /* MusadoraLabsKit */,
 			);
 			productName = iPadCarInfotainment;
 			productReference = FC6691762A733DDD0049EF08 /* iPadCarInfotainment.app */;
@@ -126,6 +141,8 @@
 			mainGroup = FC66916D2A733DDD0049EF08;
 			packageReferences = (
 				FC66918D2A735C220049EF08 /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */,
+				DFB973342A7351AF00623812 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				D1E052052A7393CD00DB6304 /* XCRemoteSwiftPackageReference "MusadoraKit" */,
 			);
 			productRefGroup = FC6691772A733DDD0049EF08 /* Products */;
 			projectDirPath = "";
@@ -155,9 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFB9732D2A733F3B00623812 /* MusicViewController.swift in Sources */,
+				D1E052112A73964500DB6304 /* MusicAuthorizationManager.swift in Sources */,
 				FC66917E2A733DDD0049EF08 /* ViewController.swift in Sources */,
 				FC66917A2A733DDD0049EF08 /* AppDelegate.swift in Sources */,
 				FC6691912A73649F0049EF08 /* MapViewController.swift in Sources */,
+				DFB973312A734D5600623812 /* UpNextUITableView.swift in Sources */,
 				FC66917C2A733DDD0049EF08 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,17 +331,19 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3UH94N3C87;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iPadCarInfotainment/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Infotainment;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To display your location on the map and for navigation";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To display your location on the map and for navigation";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Our app uses Music access to help you play music while driving.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,17 +367,19 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3UH94N3C87;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iPadCarInfotainment/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Infotainment;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To display your location on the map and for navigation";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To display your location on the map and for navigation";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Our app uses Music access to help you play music while driving.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,6 +424,22 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.14.0;
+        };
+		};
+		D1E052052A7393CD00DB6304 /* XCRemoteSwiftPackageReference "MusadoraKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rryam/MusadoraKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		DFB973342A7351AF00623812 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -410,6 +449,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FC66918D2A735C220049EF08 /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */;
 			productName = MapboxNavigation;
+    };
+		D1E052062A7393CD00DB6304 /* MusadoraKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1E052052A7393CD00DB6304 /* XCRemoteSwiftPackageReference "MusadoraKit" */;
+			productName = MusadoraKit;
+		};
+		D1E052082A7393CD00DB6304 /* MusadoraLabsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1E052052A7393CD00DB6304 /* XCRemoteSwiftPackageReference "MusadoraKit" */;
+			productName = MusadoraLabsKit;
+		};
+		DFB973352A7351AF00623812 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFB973342A7351AF00623812 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

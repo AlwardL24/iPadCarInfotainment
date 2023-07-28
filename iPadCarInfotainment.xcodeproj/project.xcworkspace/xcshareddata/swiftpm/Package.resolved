@@ -106,6 +106,23 @@
       "state" : {
         "revision" : "87b5b37108ba9f37f0885b586d8f6355d8240dd8",
         "version" : "2.6.1"
+    },
+    {
+      "identity" : "musadorakit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rryam/MusadoraKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e528c1a61b5a72c1baafb182a709183d815607fe"
+      }
+    },
+    {
+      "identity" : "swiftyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON.git",
+      "state" : {
+        "revision" : "b3dcd7dbd0d488e1a7077cb33b00f2083e382f07",
+        "version" : "5.0.1"
       }
     }
   ],
