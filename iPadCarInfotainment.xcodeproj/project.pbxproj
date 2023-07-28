@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DFB9732D2A733F3B00623812 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB9732C2A733F3B00623812 /* MusicViewController.swift */; };
+		DFB973312A734D5600623812 /* UpNextUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB973302A734D5600623812 /* UpNextUITableView.swift */; };
+		DFB973332A73502600623812 /* AppleMusicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB973322A73502600623812 /* AppleMusicAPI.swift */; };
+		DFB973362A7351AF00623812 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DFB973352A7351AF00623812 /* SwiftyJSON */; };
 		FC66917A2A733DDD0049EF08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6691792A733DDD0049EF08 /* AppDelegate.swift */; };
 		FC66917C2A733DDD0049EF08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66917B2A733DDD0049EF08 /* SceneDelegate.swift */; };
 		FC66917E2A733DDD0049EF08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66917D2A733DDD0049EF08 /* ViewController.swift */; };
@@ -18,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		DFB9732C2A733F3B00623812 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		DFB973302A734D5600623812 /* UpNextUITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpNextUITableView.swift; sourceTree = "<group>"; };
+		DFB973322A73502600623812 /* AppleMusicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicAPI.swift; sourceTree = "<group>"; };
 		FC6691762A733DDD0049EF08 /* iPadCarInfotainment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPadCarInfotainment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6691792A733DDD0049EF08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC66917B2A733DDD0049EF08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB973362A7351AF00623812 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				FC6691792A733DDD0049EF08 /* AppDelegate.swift */,
+				DFB973322A73502600623812 /* AppleMusicAPI.swift */,
 				FC66917B2A733DDD0049EF08 /* SceneDelegate.swift */,
 				DFB9732C2A733F3B00623812 /* MusicViewController.swift */,
+				DFB973302A734D5600623812 /* UpNextUITableView.swift */,
 				FC66917D2A733DDD0049EF08 /* ViewController.swift */,
 				FC66917F2A733DDD0049EF08 /* Main.storyboard */,
 				FC6691822A733DDF0049EF08 /* Assets.xcassets */,
@@ -86,6 +94,9 @@
 			dependencies = (
 			);
 			name = iPadCarInfotainment;
+			packageProductDependencies = (
+				DFB973352A7351AF00623812 /* SwiftyJSON */,
+			);
 			productName = iPadCarInfotainment;
 			productReference = FC6691762A733DDD0049EF08 /* iPadCarInfotainment.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +125,9 @@
 				Base,
 			);
 			mainGroup = FC66916D2A733DDD0049EF08;
+			packageReferences = (
+				DFB973342A7351AF00623812 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = FC6691772A733DDD0049EF08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFB9732D2A733F3B00623812 /* MusicViewController.swift in Sources */,
+				DFB973332A73502600623812 /* AppleMusicAPI.swift in Sources */,
 				FC66917E2A733DDD0049EF08 /* ViewController.swift in Sources */,
 				FC66917A2A733DDD0049EF08 /* AppDelegate.swift in Sources */,
+				DFB973312A734D5600623812 /* UpNextUITableView.swift in Sources */,
 				FC66917C2A733DDD0049EF08 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3UH94N3C87;
+				DEVELOPMENT_TEAM = V5XXM5P9LA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iPadCarInfotainment/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Infotainment;
@@ -305,12 +321,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lucasalward.iPadCarInfotainment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasalward.iPadCarInfotainmentTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -325,7 +342,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3UH94N3C87;
+				DEVELOPMENT_TEAM = V5XXM5P9LA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iPadCarInfotainment/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Infotainment;
@@ -334,12 +351,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lucasalward.iPadCarInfotainment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasalward.iPadCarInfotainmentTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -369,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DFB973342A7351AF00623812 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DFB973352A7351AF00623812 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFB973342A7351AF00623812 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC66916E2A733DDD0049EF08 /* Project object */;
 }
