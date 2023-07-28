@@ -295,6 +295,7 @@
 				DEVELOPMENT_TEAM = 3UH94N3C87;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iPadCarInfotainment/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Infotainment;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,6 +324,7 @@
 				DEVELOPMENT_TEAM = 3UH94N3C87;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iPadCarInfotainment/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Infotainment;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
