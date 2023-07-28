@@ -7,7 +7,7 @@
 
 import UIKit
 import MusicKit
-import StoreKit
+import MusadoraKit
 
 class MusicViewController: UIViewController {
 
@@ -22,22 +22,6 @@ class MusicViewController: UIViewController {
     @IBOutlet weak var playPauseButton: UIButton!
     
     @IBOutlet weak var searchBar: UISearchBar!
-    
-    struct Song {
-        var id: String
-        var name: String
-        var artistName: String
-        var artworkURL: String
-     
-        init(id: String, name: String, artistName: String, artworkURL: String) {
-            self.id = id
-            self.name = name
-            self.artworkURL = artworkURL
-            self.artistName = artistName
-        }
-    }
-    
-    var upnextSongs: [Song] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,8 +39,7 @@ class MusicViewController: UIViewController {
         
     }
     
-    
-    
+
 
     /*
     // MARK: - Navigation
