@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22113.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22089"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,13 +15,27 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWE-3a-4RX">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                                <connections>
+                                    <segue destination="Z5d-9H-zwM" kind="embed" id="Tcg-Ga-FFW"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NWE-3a-4RX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="S8g-ak-7ED"/>
+                            <constraint firstAttribute="bottom" secondItem="NWE-3a-4RX" secondAttribute="bottom" id="Ub7-kp-4n0"/>
+                            <constraint firstItem="NWE-3a-4RX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b56-0h-keH"/>
+                            <constraint firstItem="NWE-3a-4RX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zg4-5t-Jnc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="251" y="2"/>
+            <point key="canvasLocation" x="250.805270863836" y="1.7578124999999998"/>
         </scene>
         <!--Music View Controller-->
         <scene sceneID="l0R-yT-sQG">
@@ -37,6 +51,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Cr-I3-hPN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="970" y="2"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="IeT-2r-Ohs">
+            <objects>
+                <viewController id="Z5d-9H-zwM" customClass="MapViewController" customModule="iPadCarInfotainment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o2y-Ew-XY3">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oV3-ir-jrK">
+                                <rect key="frame" x="547" y="494.5" width="272" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Show Navigation View Controller"/>
+                                <connections>
+                                    <action selector="showNavigationVCButtonPressed:" destination="Z5d-9H-zwM" eventType="touchUpInside" id="4f9-FI-6EY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9B-Sz-yko">
+                                <rect key="frame" x="557.5" y="549.5" width="251" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Show Preview View Controller"/>
+                                <connections>
+                                    <action selector="ShowPreviewVCButtonPressed:" destination="Z5d-9H-zwM" eventType="touchUpInside" id="d38-nW-onS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAUTION: These are currently impossible to dismiss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYs-Fs-4lY">
+                                <rect key="frame" x="484.5" y="453.5" width="397" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V9B-Sz-yko" firstAttribute="centerX" secondItem="o2y-Ew-XY3" secondAttribute="centerX" id="5p1-om-LxD"/>
+                            <constraint firstItem="oV3-ir-jrK" firstAttribute="centerY" secondItem="o2y-Ew-XY3" secondAttribute="centerY" id="BAh-o8-S0G"/>
+                            <constraint firstItem="oV3-ir-jrK" firstAttribute="centerX" secondItem="o2y-Ew-XY3" secondAttribute="centerX" id="CJ9-8T-qsR"/>
+                            <constraint firstItem="V9B-Sz-yko" firstAttribute="top" secondItem="oV3-ir-jrK" secondAttribute="bottom" constant="20" id="CzB-f1-IzN"/>
+                            <constraint firstItem="oV3-ir-jrK" firstAttribute="top" secondItem="jYs-Fs-4lY" secondAttribute="bottom" constant="20" id="hib-0k-ZNZ"/>
+                            <constraint firstItem="jYs-Fs-4lY" firstAttribute="centerX" secondItem="o2y-Ew-XY3" secondAttribute="centerX" id="kGX-2E-3LS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3lb-IR-Zhb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="251" y="-677"/>
         </scene>
     </scenes>
     <resources>
