@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFB9732D2A733F3B00623812 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB9732C2A733F3B00623812 /* MusicViewController.swift */; };
 		FC66917A2A733DDD0049EF08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6691792A733DDD0049EF08 /* AppDelegate.swift */; };
 		FC66917C2A733DDD0049EF08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66917B2A733DDD0049EF08 /* SceneDelegate.swift */; };
 		FC66917E2A733DDD0049EF08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66917D2A733DDD0049EF08 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DFB9732C2A733F3B00623812 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		FC6691762A733DDD0049EF08 /* iPadCarInfotainment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPadCarInfotainment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6691792A733DDD0049EF08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC66917B2A733DDD0049EF08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				FC6691792A733DDD0049EF08 /* AppDelegate.swift */,
 				FC66917B2A733DDD0049EF08 /* SceneDelegate.swift */,
+				DFB9732C2A733F3B00623812 /* MusicViewController.swift */,
 				FC66917D2A733DDD0049EF08 /* ViewController.swift */,
 				FC66917F2A733DDD0049EF08 /* Main.storyboard */,
 				FC6691822A733DDF0049EF08 /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB9732D2A733F3B00623812 /* MusicViewController.swift in Sources */,
 				FC66917E2A733DDD0049EF08 /* ViewController.swift in Sources */,
 				FC66917A2A733DDD0049EF08 /* AppDelegate.swift in Sources */,
 				FC66917C2A733DDD0049EF08 /* SceneDelegate.swift in Sources */,
